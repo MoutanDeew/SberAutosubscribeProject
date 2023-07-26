@@ -6,7 +6,8 @@
 <h2 align="center">How to run the model?</h2>
 <h3 align="center">Step 1. Download the "model" folder and the "main.py" file.</h3>
 <h3 align="center">Step 2. Because this is localhost web app. Download and install Postman.</h3>
-<h3 align="center">Step 3. Insert a JSON data file like this in the request body. Data can be taken from the database file, which is in the releases for the project.</h3>
+<h3 align="center">Step 3. Run linux or gitbash command prompt. Go to the folder with the project files and run the application with the command "uvicorn main:app --reload".</h3>
+<h3 align="center">Step 4. Run Postman. Insert a JSON data file like this in the request body. Data can be taken from the database file, which is in the releases for the project.</h3>
 <h3 align="left">{</h3>
 <h3 align="left">    "utm_source": "fDLlAcSmythWSCVMvqvL",</h3>
 <h3 align="left">    "utm_medium": "cpa",</h3>
@@ -21,7 +22,7 @@
     <h3 align="left">    "geo_country": "Russia",</h3>
     <h3 align="left">    "geo_city": "Moscow"</h3>
 <h3 align="left">}</h3>
-<h3 align="center">Step 4. For prediction, select the post request type and enter the command 127.0.0.1:8000/predict.</h3>
-<h3 align="center">Step 5. Get the prediction result. Conclusion 0 or 1. Where 1 is the completion of the target action. (a person has purchased a subscription, etc.).</h3>
-<h3 align="center">Step 6. Invite me for an interview to make useful and effective ML models together. =) </h3>
+<h3 align="center">Step 5. For prediction, select the post request type and enter the command 127.0.0.1:8000/predict.</h3>
+<h3 align="center">Step 6. Get the prediction result. Conclusion 0 or 1. Where 1 is the completion of the target action. (a person has purchased a subscription, etc.).</h3>
+<h3 align="center">Step 7. Invite me for an interview to make useful and effective ML models together. =) </h3>
 
