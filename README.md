@@ -13,12 +13,13 @@
 <h3 align="left">Due to the low power of the computer. Calculations were not performed or were performed for a very long time.</h3>
 
 <h2 align="center">How could it be decided?</h2>
-<h3 align="left">1). Reduce the dataset on which the manipulations were performed. For example, instead of 15,000,000 lines, take only 400,000.
-2). Split values ​​in all columns except geo_city, utm_medium, device_category, device_os, device_browser into classes. I chose how to break the values ​​into classes based on the target user action. For 1, I took the most frequent value of the column for the user who performed the target action, and the remaining values ​​of the column as 0.</h3>
+<h3 align="left">1). Reduce the dataset on which the manipulations were performed. For example, instead of 15,000,000 lines, take only 400,000.</h3>
+<h3 align="left">2). Split values ​​in all columns except geo_city, utm_medium, device_category, device_os, device_browser into classes. I chose how to break the values ​​into classes based on the target user action. For 1, I took the most frequent value of the column for the user who performed the target action, and the remaining values ​​of the column as 0.</h3>
+<h3 align="left">3) Sort the most frequent categories of columns and discard the rare ones. For example, take cities where there are more than 6,000 thousand users of the service.
+</h3>
 
-<h3 align="left">I chose the second solution because I wanted to train the model on a larger sample. The sample was 3369072 lines.
-As a result, the best Ml-model for finding the optimal function is Random Forest. With ROC-AUC = 0.65.</h3>
-<h3 align="center"><img src="https://github.com/MoutanDeew/SberAutosubscribeProject/raw/main/charts/ROC-AUC_0.65.png" height="400"/></h3>
+<h3 align="left">I chose the second solution first. But I immediately realized that there is a more effective solution. And then came to the 3rd option. The sample was 3369072 lines. As a result, the best ML model for finding the optimal function is also Random Forest. It turned out to achieve an indicator ROC-AUC = 0.65. For the second option. And ROC-AUC = 0.75. For the third solution.</h3>
+<h3 align="center"><img src="https://github.com/MoutanDeew/SberAutosubscribeProject/raw/main/charts/ROC-AUC_0.75.png" height="400"/></h3>
 
 <h3 align="left">To better understand which features are more influential in determining the target user action, I used SHAP.</h3>
 
